@@ -7,8 +7,7 @@ This repository contains Jupyter notebooks describing cloning using
 
 The notebooks and other files in this repository accompany the publication:
 
-<img src="https://github.com/BjornFJohansson/pydna_template/blob/master/references/abstract.png?raw=true"
-alt="" data-canonical-src="https://github.com/BjornFJohansson/pydna_template/blob/master/references/abstract.png" width="800" />
+![button](references/abstract.png)
 
 Ioannidis, J. P. A. (2016). Why Most Clinical Research Is Not Useful. PLoS Medicine, 13(6), e1002049.
 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27328301)
