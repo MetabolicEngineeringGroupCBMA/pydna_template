@@ -7,13 +7,12 @@ This repository contains Jupyter notebooks describing cloning using
 
 The notebooks and other files in this repository accompany the publication:
 
-![abstr](references/abstract.png)
+<img src="https://github.com/BjornFJohansson/pydna_template/blob/master/references/abstract.png?raw=true"
+alt="" data-canonical-src="https://github.com/BjornFJohansson/pydna_template/blob/master/references/abstract.png" width="800" />
 
-Costa, C.E., Romaní, A., Cunha, J.T., Johansson, B., Domingues, L., 2017. Integrated approach for selecting efficient
-Saccharomyces cerevisiae for industrial lignocellulosic fermentations: Importance of yeast chassis linked to process
-conditions. Bioresour. Technol. 227, 24–34.
-[pubmed](https://www.ncbi.nlm.nih.gov/pubmed/28013133)
-[publisher](http://www.sciencedirect.com/science/article/pii/S0960852416316674)
+Ioannidis, J. P. A. (2016). Why Most Clinical Research Is Not Useful. PLoS Medicine, 13(6), e1002049.
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/27328301)
+[website](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002049)
 
 The notebooks can be visualized in a number of ways.
 Each notebook (.ipynb) is accompanied by a HTML file with the same name but with an (.html)
@@ -40,7 +39,7 @@ results once per week to ensure [reproducibility](https://en.wikipedia.org/wiki/
 
 If the badge below is green, all tests gave the expected results.
 
-[![test jupiter notebooks](https://github.com/MetabolicEngineeringGroupCBMA/Cunha_et_al_2017/workflows/test%20jupiter%20notebooks/badge.svg)](https://github.com/MetabolicEngineeringGroupCBMA/pydna_template/actions?query=workflow%3A%22test+jupiter+notebooks%22)
+[![test jupyter notebooks](https://github.com/MetabolicEngineeringGroupCBMA/Cunha_et_al_2017/workflows/test%20jupiter%20notebooks/badge.svg)](https://github.com/MetabolicEngineeringGroupCBMA/pydna_template/actions?query=workflow%3A%22test+jupiter+notebooks%22)
 
 
 If you would like to have your own copy of this repository, the best solution is to get a
