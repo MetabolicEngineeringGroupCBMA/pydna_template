@@ -57,7 +57,7 @@ If the badge below is green, all tests gave the expected results.
 
 ## How to use this repository
 
-This repository was made to facilitate reproducing Jupyter notebooks online as a GitHub repository.
+This repository was made to facilitate reproducing Jupyter notebooks online in a GitHub repository.
 
 1. Create a GitHub account if you do not already have one
 2. Click on the ![button](references/button.png) at the top of this screen to make you own copy
@@ -88,3 +88,7 @@ These steps do not require Git.
 
 The notebooks are set up to be tested once per week by running the `test_all_notebooks.sh` script.
 This can be changed in the `.github/workflows/test_notebooks_workflow.yml file`.
+
+
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
