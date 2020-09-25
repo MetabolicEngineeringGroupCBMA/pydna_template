@@ -64,7 +64,7 @@ This repository was made to facilitate reproducing Jupyter notebooks online as a
 These steps require having [Git](https://git-scm.com) installed. This is the recommended way.
 
 3. Clone the repository to you own computer.
-4. Replace the notebooks in the `notebooks` folder
+4. Replace the notebooks in the `notebooks` folder with your notebooks and add *all* other files needed to run them
 5. Run the notebooks using the `test_all_notebooks.sh` script
 6. Add dependencies to the `environment.yml` if necessary
 7. Commit and push
