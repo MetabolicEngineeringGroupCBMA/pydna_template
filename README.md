@@ -40,7 +40,7 @@ results once per week to ensure [reproducibility](https://en.wikipedia.org/wiki/
 
 If the badge below is green, all tests gave the expected results.
 
-![test jupiter notebooks](https://github.com/MetabolicEngineeringGroupCBMA/Cunha_et_al_2017/workflows/test%20jupiter%20notebooks/badge.svg)
+[![test jupiter notebooks](https://github.com/MetabolicEngineeringGroupCBMA/Cunha_et_al_2017/workflows/test%20jupiter%20notebooks/badge.svg)](https://github.com/MetabolicEngineeringGroupCBMA/pydna_template/actions?query=workflow%3A%22test+jupiter+notebooks%22)
 
 
 If you would like to have your own copy of this repository, the best solution is to get a
@@ -49,3 +49,39 @@ computer as a zip file, Click [here](https://github.com/BjornFJohansson/Cunha_et
 
 Executing these notebooks require [pydna](https://github.com/BjornFJohansson/pydna) (version 3.1.1 or later)
 and [pygenome](https://github.com/BjornFJohansson/pygenome) 3.1.0. or later.
+
+
+
+## How to use this repository
+
+This repository was made to facilitate reproducing Jupyter notebooks online as a GitHub repository.
+
+1. Create a GitHub account if you do not already have one
+2. Click on the ![button](references/button.png) at the top of this screen to make you own copy
+
+### Using Git
+
+These steps require having [Git](https://git-scm.com) installed. This is the recommended way.
+
+3. Clone the repository to you own computer.
+4. Replace the notebooks in the `notebooks` folder
+5. Run the notebooks using the `test_all_notebooks.sh` script
+6. Add dependencies to the `environment.yml` if necessary
+7. Commit and push
+
+### Using GitHub
+
+These steps do not require Git.
+
+3. Run and save your notebooks on you local computer
+4. Navigate to the `notebooks` folder in your repository
+5. Use the `Addfile` -> `Upload files` button at the upper right corner to upload your notebooks and *all* other files needed to run them.
+6. Edit the `environment.yml` if necessary. This can be done online.
+7. Click on each original file that you do not want to have the option to delete them.
+
+
+
+## Automatic testing
+
+The notebooks are set up to be tested once per week by running the `test_all_notebooks.sh` script.
+This can be changed in the `.github/workflows/test_notebooks_workflow.yml file`.
