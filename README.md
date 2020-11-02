@@ -12,9 +12,11 @@ The notebooks and other files in this repository accompany the publication:
 
 ![button](references/abstract.png)
 
-Ioannidis, J. P. A. (2016). Why Most Clinical Research Is Not Useful. PLoS Medicine, 13(6), e1002049.
+**Adams, A. A., Ball, B, & Carter, C. C. (2000). An example of a placeholder reference. Journal of Examples and Placeholders, 23(4), 245-259.**
 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27328301)
 [website](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002049)
+
+[![DOI](https://zenodo.org/badge/256500748.svg)](https://zenodo.org/badge/latestdoi/256500748)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
 
