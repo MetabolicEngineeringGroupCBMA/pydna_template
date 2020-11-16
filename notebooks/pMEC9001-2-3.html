@@ -13204,7 +13204,6 @@ P2: ACAAGAGAAACTTTTGGGTAAAATG
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pygenome</span> <span class="kn">import</span> <span class="n">saccharomyces_cerevisiae</span> <span class="k">as</span> <span class="n">sg</span>
-<span class="kn">from</span> <span class="nn">pydna.dseqrecord</span> <span class="kn">import</span> <span class="n">Dseqrecord</span>
 </pre></div>
 
     </div>
@@ -13773,7 +13772,7 @@ GGGT..CATA</pre>
 <div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fragments</span> <span class="o">=</span> <span class="n">assembly_fragments</span><span class="p">(</span> <span class="p">[</span><span class="n">Dseqrecord</span><span class="p">(</span><span class="n">pMEC1049_xho</span><span class="o">.</span><span class="n">seq</span><span class="o">.</span><span class="n">mung</span><span class="p">()),</span> <span class="n">HAA1_product</span><span class="p">,</span> <span class="n">pMEC1049_xho</span><span class="p">]</span> <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydna.dseqrecord</span> <span class="kn">import</span> <span class="n">Dseqrecord</span>
 </pre></div>
 
     </div>
@@ -13784,6 +13783,19 @@ GGGT..CATA</pre>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fragments</span> <span class="o">=</span> <span class="n">assembly_fragments</span><span class="p">(</span> <span class="p">[</span><span class="n">Dseqrecord</span><span class="p">(</span><span class="n">pMEC1049_xho</span><span class="o">.</span><span class="n">seq</span><span class="o">.</span><span class="n">mung</span><span class="p">()),</span> <span class="n">HAA1_product</span><span class="p">,</span> <span class="n">pMEC1049_xho</span><span class="p">]</span> <span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HAA1_product</span><span class="o">.</span><span class="n">seq</span>
@@ -13799,7 +13811,7 @@ GGGT..CATA</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -13818,7 +13830,7 @@ GGGT..CATA</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Hfw</span> <span class="o">=</span> <span class="n">fragments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">forward_primer</span>
@@ -13832,7 +13844,7 @@ GGGT..CATA</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Hfw</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Hfw&quot;</span>
@@ -13846,7 +13858,7 @@ GGGT..CATA</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Hfw</span> <span class="o">=</span> <span class="n">Hfw</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
@@ -13860,7 +13872,7 @@ GGGT..CATA</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Hfw</span> <span class="o">=</span> <span class="n">Hfw</span><span class="p">[:</span><span class="mi">50</span><span class="p">]</span> <span class="c1"># we limit the length to 50 bp since these are less expensive from our provider</span>
@@ -13874,7 +13886,7 @@ GGGT..CATA</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">Hfw</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">)</span> <span class="p">)</span>
@@ -13906,7 +13918,7 @@ GGGT..CATA</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">Hrv</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">)</span> <span class="p">)</span>
@@ -13938,7 +13950,7 @@ GGGT..CATA</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HAA1_recombination_product</span> <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span><span class="n">Hfw</span><span class="p">,</span> <span class="n">Hrv</span><span class="p">,</span> <span class="n">HAA1_locus</span><span class="p">)</span>
@@ -13951,7 +13963,7 @@ GGGT..CATA</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HAA1_recombination_product</span>
@@ -13967,7 +13979,7 @@ GGGT..CATA</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -13983,7 +13995,7 @@ Amplicon(3284)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HAA1_recombination_product</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -13999,7 +14011,7 @@ Amplicon(3284)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[38]:</div>
 
 
 
@@ -14021,7 +14033,7 @@ Amplicon(3284)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydna.assembly</span> <span class="kn">import</span> <span class="n">Assembly</span>
@@ -14034,7 +14046,7 @@ Amplicon(3284)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm_haa1</span> <span class="o">=</span> <span class="n">Assembly</span><span class="p">((</span><span class="n">pMEC1049_xho</span><span class="p">,</span> <span class="n">HAA1_recombination_product</span><span class="p">))</span>
@@ -14047,7 +14059,7 @@ Amplicon(3284)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm_haa1</span>
@@ -14063,7 +14075,7 @@ Amplicon(3284)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[40]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -14084,7 +14096,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span> <span class="o">=</span> <span class="n">asm_haa1</span><span class="o">.</span><span class="n">assemble_circular</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
@@ -14097,7 +14109,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -14113,7 +14125,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -14138,7 +14150,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9001</span> <span class="o">=</span> <span class="n">candidate</span><span class="o">.</span><span class="n">synced</span><span class="p">(</span><span class="n">pMEC1049</span><span class="p">)</span>
@@ -14151,7 +14163,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9001</span><span class="o">.</span><span class="n">stamp</span><span class="p">()</span>
@@ -14167,7 +14179,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[44]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -14184,7 +14196,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9001</span><span class="o">.</span><span class="n">locus</span><span class="o">=</span><span class="s2">&quot;pMEC9001&quot;</span>
@@ -14205,7 +14217,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9001</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;pMEC9001.gb&quot;</span><span class="p">)</span>
@@ -14245,7 +14257,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC1049_oli</span> <span class="o">=</span> <span class="n">pMEC1049</span><span class="o">.</span><span class="n">linearize</span><span class="p">(</span><span class="n">OliI</span><span class="p">)</span>
@@ -14266,7 +14278,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fragments2</span> <span class="o">=</span> <span class="n">assembly_fragments</span><span class="p">((</span><span class="n">pMEC1049_oli</span><span class="p">,</span> <span class="n">PRS3_product</span><span class="p">,</span> <span class="n">pMEC1049_oli</span><span class="p">))</span>
@@ -14279,7 +14291,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Pfw</span> <span class="o">=</span> <span class="n">fragments2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">forward_primer</span>
@@ -14293,7 +14305,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Pfw</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Pfw&quot;</span>
@@ -14307,7 +14319,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Prv</span><span class="o">=</span><span class="n">Prv</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
@@ -14320,7 +14332,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Pfw</span> <span class="o">=</span> <span class="n">Pfw</span><span class="p">[:</span><span class="mi">51</span><span class="p">]</span>
@@ -14334,7 +14346,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">Pfw</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
@@ -14369,7 +14381,7 @@ part_part_Prv	CATAAGTACCCATCCAAGAGCACGCTTATTCACCAACAAGAGAAACTTTTG
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">PRS3_recombination_product</span> <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span><span class="n">Pfw</span><span class="p">,</span> <span class="n">Prv</span><span class="p">,</span> <span class="n">PRS3_locus</span><span class="p">)</span>
@@ -14382,7 +14394,7 @@ part_part_Prv	CATAAGTACCCATCCAAGAGCACGCTTATTCACCAACAAGAGAAACTTTTG
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">PRS3_recombination_product</span>
@@ -14398,7 +14410,7 @@ part_part_Prv	CATAAGTACCCATCCAAGAGCACGCTTATTCACCAACAAGAGAAACTTTTG
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[55]:</div>
+    <div class="prompt output_prompt">Out[56]:</div>
 
 
 
@@ -14422,7 +14434,7 @@ Amplicon(1616)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC1049_ale</span> <span class="o">=</span> <span class="n">pMEC1049</span><span class="o">.</span><span class="n">linearize</span><span class="p">(</span><span class="n">AleI</span><span class="p">)</span>
@@ -14435,7 +14447,7 @@ Amplicon(1616)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm_prs3</span> <span class="o">=</span> <span class="n">Assembly</span><span class="p">((</span><span class="n">pMEC1049_ale</span><span class="p">,</span> <span class="n">PRS3_recombination_product</span><span class="p">))</span>
@@ -14448,7 +14460,7 @@ Amplicon(1616)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm_prs3</span>
@@ -14464,7 +14476,7 @@ Amplicon(1616)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[58]:</div>
+    <div class="prompt output_prompt">Out[59]:</div>
 
 
 
@@ -14485,7 +14497,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span> <span class="o">=</span> <span class="n">asm_prs3</span><span class="o">.</span><span class="n">assemble_circular</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
@@ -14498,7 +14510,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span>
@@ -14514,7 +14526,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[60]:</div>
+    <div class="prompt output_prompt">Out[61]:</div>
 
 
 
@@ -14538,7 +14550,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9002</span> <span class="o">=</span> <span class="n">candidate</span><span class="o">.</span><span class="n">synced</span><span class="p">(</span><span class="n">pMEC1049</span><span class="p">)</span>
@@ -14551,7 +14563,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9002</span><span class="o">.</span><span class="n">locus</span> <span class="o">=</span> <span class="s2">&quot;pMEC9002&quot;</span>
@@ -14564,7 +14576,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9002</span><span class="o">.</span><span class="n">stamp</span><span class="p">()</span>
@@ -14580,7 +14592,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[63]:</div>
+    <div class="prompt output_prompt">Out[64]:</div>
 
 
 
@@ -14605,7 +14617,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9002</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;pMEC9002.gb&quot;</span><span class="p">)</span>
@@ -14645,7 +14657,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC1049_9kbp</span><span class="p">,</span> <span class="n">pMEC1049_6kb</span> <span class="o">=</span> <span class="n">pMEC1049</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">XhoI</span><span class="p">,</span> <span class="n">AleI</span><span class="p">)</span>
@@ -14658,43 +14670,10 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC1049_6kb</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[66]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Dseqrecord(-6017)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC1049_9kbp</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC1049_6kb</span>
 </pre></div>
 
     </div>
@@ -14713,7 +14692,7 @@ algorithm..: common_sub_strings</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Dseqrecord(-9475)</pre>
+<pre>Dseqrecord(-6017)</pre>
 </div>
 
 </div>
@@ -14727,6 +14706,39 @@ algorithm..: common_sub_strings</pre>
 <div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC1049_9kbp</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[68]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Dseqrecord(-9475)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC1049_6kb</span><span class="o">.</span><span class="n">locus</span> <span class="o">=</span> <span class="s2">&quot;pMEC1049_6kb&quot;</span>
 <span class="n">pMEC1049_9kbp</span><span class="o">.</span><span class="n">locus</span> <span class="o">=</span> <span class="s2">&quot;pMEC1049_9kbp&quot;</span>
 </pre></div>
@@ -14738,7 +14750,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm_prs_haa</span> <span class="o">=</span> <span class="n">Assembly</span><span class="p">((</span><span class="n">pMEC1049_6kb</span><span class="p">,</span> <span class="n">pMEC1049_9kbp</span><span class="p">,</span> <span class="n">HAA1_recombination_product</span><span class="p">,</span> <span class="n">PRS3_recombination_product</span><span class="p">))</span>
@@ -14751,7 +14763,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm_prs_haa</span>
@@ -14767,7 +14779,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[70]:</div>
+    <div class="prompt output_prompt">Out[71]:</div>
 
 
 
@@ -14788,7 +14800,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span> <span class="o">=</span> <span class="n">asm_prs_haa</span><span class="o">.</span><span class="n">assemble_circular</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
@@ -14801,7 +14813,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span>
@@ -14817,7 +14829,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[72]:</div>
+    <div class="prompt output_prompt">Out[73]:</div>
 
 
 
@@ -14847,7 +14859,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9003</span> <span class="o">=</span> <span class="n">candidate</span><span class="o">.</span><span class="n">synced</span><span class="p">(</span><span class="n">pMEC1049</span><span class="p">)</span>
@@ -14860,7 +14872,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9003</span><span class="o">.</span><span class="n">stamp</span><span class="p">()</span>
@@ -14876,7 +14888,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[74]:</div>
+    <div class="prompt output_prompt">Out[75]:</div>
 
 
 
@@ -14893,7 +14905,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9003</span><span class="o">.</span><span class="n">locus</span><span class="o">=</span><span class="s2">&quot;pMEC9003&quot;</span>
@@ -14914,7 +14926,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9003</span>
@@ -14930,7 +14942,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[76]:</div>
+    <div class="prompt output_prompt">Out[77]:</div>
 
 
 
@@ -14947,7 +14959,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pMEC9003</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;pMEC9003.gb&quot;</span><span class="p">)</span>
