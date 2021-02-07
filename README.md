@@ -10,7 +10,7 @@ This repository contains Jupyter notebooks describing cloning using
 
 The notebooks and other files in this repository accompany the publication:
 
-![button](references/abstract.png)
+![button](accessory/abstract.png)
 
 **Adams, A. A., Ball, B, & Carter, C. C. (2000). An example of a placeholder reference. Journal of Examples and Placeholders, 23(4), 245-259.**
 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27328301)
@@ -62,7 +62,7 @@ If the badge below is green, all tests gave the expected results.
 This repository was made to facilitate reproducing Jupyter notebooks online in a GitHub repository.
 
 1. Create a GitHub account if you do not already have one
-2. Click on the ![button](references/button.png) at the top of this screen to make you own copy
+2. Click on the ![button](accessory/button.png) at the top of this screen to make you own copy
 
 ### Using Git
 
