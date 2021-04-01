@@ -4,6 +4,6 @@ shopt -s globstar
 cd notebooks
 
 #command to convert all notebooks
-jupyter nbconvert **/*.ipynb
+jupyter nbconvert **/*.ipynb --to html
 
 exit $?
