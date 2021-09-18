@@ -12,7 +12,8 @@ The notebooks and other files in this repository accompany the publication:
 
 ![button](accessory/abstract.png)
 
-**Adams, A. A., Ball, B, & Carter, C. C. (2000). An example of a placeholder reference. Journal of Examples and Placeholders, 23(4), 245-259.**
+**Adams, A. A., Ball, B, & Carter, C. C. (2000). An example of a placeholder reference. Journal of Examples, 23(4), 245-259.**
+
 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27328301)
 [website](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002049)
 
