@@ -5,7 +5,7 @@ This repository contains Jupyter notebooks describing cloning using
 [Jupyter notebooks](https://jupyter.org) and
 [pydna](https://github.com/BjornFJohansson/pydna).
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+![-----------------------------------------------------](accessory/line.png)
 
 
 The notebooks and other files in this repository accompany the publication:
@@ -19,18 +19,17 @@ The notebooks and other files in this repository accompany the publication:
 
 [![DOI](https://zenodo.org/badge/256500748.svg)](https://zenodo.org/badge/latestdoi/256500748)
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+![-----------------------------------------------------](accessory/line.png)
 
 
 The notebooks can be visualized in a number of ways.
-Each notebook (.ipynb) is accompanied by a HTML file with the same name but with an (.html)
-extension. These can be opened in a web browser without installing any software.
 
-The notebooks (.ipynb) can be opened in the browser through the nbviewer service
-[here](http://nbviewer.jupyter.org/github/MetabolicEngineeringGroupCBMA/Cunha_et_al_2017/blob/master/notebooks/index.ipynb)
-or directly in Github [here](notebooks/index.ipynb).
+The notebooks (.ipynb) can be viewed directly on Github or through the
+nbviewer service [here](http://nbviewer.jupyter.org)
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+The Jupyter Notebook Viewer for [chrome](https://chrome.google.com/webstore/detail/jupyter-notebook-viewer/ocabfdicbcamoonfhalkdojedklfcjmf?hl=en) is free and very useful to rapidly view notebooks in the browser.
+
+![-----------------------------------------------------](accessory/line.png)
 
 ## Significant files
 
@@ -38,7 +37,9 @@ or directly in Github [here](notebooks/index.ipynb).
 
 [pMEC1049](notebooks/pMEC1049.ipynb)
 
-[pMEC9001-2-3](notebooks/pMEC9001-2-3.ipynb)
+[Pydna boilerplate code](notebooks/pydna.ipynb)
+
+[nbval_examples](notebooks/nbval_examples.ipynb)
 
 The index.ipynb notebook is the place to start as it has links to the other notebooks.
 
@@ -55,8 +56,7 @@ If the badge below is green, all tests gave the expected results.
 
 
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
-
+![-----------------------------------------------------](accessory/line.png)
 
 ## How to use this repository
 
@@ -67,7 +67,7 @@ This repository was made to facilitate reproducing Jupyter notebooks online in a
 
 ### Using Git
 
-These steps require having [Git](https://git-scm.com) installed. This is the recommended way.
+These steps **require** having [Git](https://git-scm.com) installed. This is the recommended way.
 
 3. Clone the repository to you own computer.
 4. Replace the notebooks in the `notebooks` folder with your notebooks and add *all* other files needed to run them
@@ -94,4 +94,4 @@ This can be changed in the `.github/workflows/test_notebooks_workflow.yml file`.
 
 
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+![-----------------------------------------------------](accessory/line.png)
